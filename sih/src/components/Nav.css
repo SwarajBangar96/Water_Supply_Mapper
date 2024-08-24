@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #02022c;
+  padding: 10px 20px;
+  color: #fff;
+  width: 100%;
+  margin-left: 0%;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  margin: 5px;
+  margin-left: 20px;
+ text-decoration-color: white;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row; /* Adjust to column for vertical alignment */
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 10px 20px; /* Adjust the padding for spacing */
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 2px;
+}
+
+.nav-item:hover{
+  color: yellow;
+}
+
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #02022c;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0; /* Adjust margin for spacing in mobile view */
+  }
+}
+
+.nav-item :hover{
+  color: #fff;
+}
+
+/* Add these styles to your Nav.css file */
+.dropdown-menu {
+position: absolute;
+top: 100%; /* Position dropdown below the Maps item */
+left: 0;
+background-color: #fff; /* Set the background color as needed */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.dropdown-menu li {
+padding: 0px; /* Adjust padding as needed */
+cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+background-color: #f0f0f0; /* Optional: Add a hover effect */
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+/* For removing the border around dropdown menus */
+select .dropdown-menu li {
+border: none;
+}
+
+/* For removing the border around text inputs */
+input[type="text"] {
+border: none;
+}
+
+.btn-primary.login-button {
+  border: 2px solid blue;
+  padding: 5px; /* Add padding for better appearance */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  width: fit-content;
+}

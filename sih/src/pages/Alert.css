@@ -1,0 +1,34 @@
+/* Alert.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup {
+    background-color: #ffcccc; /* Red background color */
+    padding: 30px; /* Increased padding */
+    border-radius: 12px; /* Increased border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Increased box shadow */
+    position: relative;
+    max-width: 400px; /* Set max width */
+    text-align: center;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+  }
+  

@@ -1,0 +1,12 @@
+.sensordata{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(122, 122, 239);
+    margin: 20px;
+}
